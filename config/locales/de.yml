@@ -1,0 +1,17 @@
+de:
+  activerecord:
+    attributes:
+      ecm/time_tracking/entry:
+        begin_at: Von
+        break_length_in_minutes: Pause [Minuten]
+        description: Beschreibung
+        end_at: Bis
+        length: Länge
+        overtime: Überzeit
+        tracker: Erfasser
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
+    models:
+      ecm/time_tracking/entry:
+        one: Eintrag
+        other: Einträge
