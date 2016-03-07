@@ -6,12 +6,19 @@ de:
         break_length_in_minutes: Pause [Minuten]
         description: Beschreibung
         end_at: Bis
+        entry_type: Typ
         length: Länge
         overtime: Überzeit
         tracker: Erfasser
         created_at: Erstellt am
         updated_at: Aktualisiert am
+      ecm/time_tracking/entry_type:
+        identifier: Bezeichner
+        due_in_hours: Soll [Stunden]
     models:
       ecm/time_tracking/entry:
         one: Eintrag
         other: Einträge
+      ecm/time_tracking/entry_type:
+        one: Eintragstyp
+        other: Eintragstypen
