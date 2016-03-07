@@ -33,9 +33,9 @@ module Ecm::TimeTracking
     private
 
     def set_defaults
-      self.end_at = Time.zone.now.change(sec: 0)
-      self.begin_at = self.end_at - DEFAULT_DUE_HOURS_PER_DAY.hours - DEFAULT_BREAK_LENGTH_IN_MINUTES.minutes
-      self.break_length_in_minutes = DEFAULT_BREAK_LENGTH_IN_MINUTES
+      self.end_at                  ||= Time.zone.now.change(sec: 0)
+      self.begin_at                ||= self.end_at - DEFAULT_DUE_HOURS_PER_DAY.hours - DEFAULT_BREAK_LENGTH_IN_MINUTES.minutes
+      self.break_length_in_minutes ||= DEFAULT_BREAK_LENGTH_IN_MINUTES
     end
   end
 end

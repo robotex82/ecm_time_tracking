@@ -19,7 +19,6 @@ module Ecm::TimeTracking
       (due_in_minutes || 0) / 60
     end
 
-
     def human
       identifier
     end
