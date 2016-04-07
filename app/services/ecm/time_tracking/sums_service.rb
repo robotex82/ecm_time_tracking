@@ -2,7 +2,7 @@ module Ecm
   module TimeTracking
     class SumsService < Itsf::Services::V2::Service::Base
       class Response < Itsf::Services::V2::Response::Base
-        attr_accessor :overtime, :count_by_entry_type
+        attr_accessor :overtime, :count_by_entry_type, :entries
 
         def overtime_in_hours
           overtime / 3600
@@ -18,6 +18,7 @@ module Ecm
         calculate_sums
         response.overtime = overtime
         response.count_by_entry_type = count_by_entry_type
+        response.entries = entries
         response
       end
 

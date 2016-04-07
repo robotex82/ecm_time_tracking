@@ -6,7 +6,7 @@ module Ecm::TimeTracking
     belongs_to :tracker, class_name: Configuration.tracker_class_name, foreign_key: 'tracker_id'
     belongs_to :entry_type
 
-    validates :tracker, :begin_at, :end_at, presence: true
+    validates :entry_type, :tracker, :begin_at, :end_at, presence: true
 
     after_initialize :set_defaults, if: :new_record?
 
