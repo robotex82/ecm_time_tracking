@@ -1,6 +1,13 @@
 de:
   activerecord:
     attributes:
+      ecm/time_tracking/tracker_calculation_schema:
+        tracker: Erfasser
+        identifier: Bezeichner
+        enabled_from: Aktiv von
+        enabled_to: Aktiv bis
+        created_at: Erstellt am
+        updated_at: Aktualisiert am
       ecm/time_tracking/entry:
         begin_at: Von
         break_length_in_minutes: Pause [Minuten]
@@ -22,3 +29,6 @@ de:
       ecm/time_tracking/entry_type:
         one: Eintragstyp
         other: Eintragstypen
+      ecm/time_tracking/tracker_calculation_schema:
+        one: Berechnungsschema
+        other: Berechnungsschemen

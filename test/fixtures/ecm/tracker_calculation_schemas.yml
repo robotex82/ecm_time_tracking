@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tracker_id: 1
+  identifier: MyString
+  enabled_from: 2016-04-08 17:06:46
+  enabled_to: 2016-04-08 17:06:46
+
+two:
+  tracker_id: 1
+  identifier: MyString
+  enabled_from: 2016-04-08 17:06:46
+  enabled_to: 2016-04-08 17:06:46
