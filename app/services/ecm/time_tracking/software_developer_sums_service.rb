@@ -1,5 +1,7 @@
 module Ecm
   module TimeTracking
+    # This sums service provides calculations for an included monthly overtime of
+    # 10 hours.
     class SoftwareDeveloperSumsService < SumsService
       attr_accessor :gross_overtime_by_month
       attr_accessor :net_overtime_by_month
