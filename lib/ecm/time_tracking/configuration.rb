@@ -8,9 +8,8 @@ module Ecm
         yield self
       end
 
-      mattr_accessor :tracker_class_name do
-        nil
-      end
+      mattr_accessor(:tracker_class_name) {}
+      mattr_accessor(:default_calculation_schema) { 'Ecm::TimeTracking::FlatSumsService' }
     end
   end
 end
